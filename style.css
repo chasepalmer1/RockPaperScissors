@@ -1,0 +1,75 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: antiquewhite;
+}
+
+#title {
+    display: flex;
+    padding: 50px;
+    font-size: 50px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+    border: outset;
+    border-color: black;
+    border-width: 5px;
+}
+
+#buttons {
+    display: flex;
+    padding: 50px;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgrey;
+}
+
+.button {
+    background-color: cadetblue;
+    color: azure;
+    font-size: 25px;
+    width: 180px;
+    height: 90px;
+    border-radius: 25px;
+    border-width: 5px;
+    border-color: black;
+}
+
+#messageBox {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: dimgray;
+    border: outset;
+    border-color: black;
+    border-width: 5px;
+}
+
+#scoreKeep {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#winner {
+    display: flex;
+    width: 500px;
+    height: 100px;
+    background-color: cadetblue;
+    border: outset;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 25px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
