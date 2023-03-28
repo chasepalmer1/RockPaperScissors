@@ -61,17 +61,28 @@ function playRound(playerSelection, computerSelection) {
 function checkWin(choice) {
     if (playerScore < numToWin && computerScore < numToWin) {
         playRound(choice, computerSelection);
-        roundText.textContent = gameResults;
-        player.textContent = `Player Score: ${playerScore}`;
-        computer.textContent = `Computer Score: ${computerScore}`;
+        updateText();
     } 
     if (playerScore >= numToWin) {
         gameResults = "You won the game! Congrats!";
-        roundText.textContent = gameResults;
+        updateText();
     } else if (computerScore >= numToWin) {
         gameResults = "Computer won the game... You lost.";
-        roundText.textContent = gameResults;
+        updateText();
     }
+}
+
+function newGame() {
+    gameResults = "";
+    playerScore = 0;
+    computerScore = 0;
+    updateText();
+}
+
+function updateText() {
+    roundText.textContent = gameResults;
+    player.textContent = `Player Score: ${playerScore}`;
+    computer.textContent = `Computer Score: ${computerScore}`;
 }
 
 const score = document.querySelector('#scoreKeep');
@@ -94,6 +105,10 @@ const scissors = document.querySelector('#scissors');
 scissors.addEventListener('click', () => {
     getComputerChoice();
     checkWin("scissors");
+});
+const reset = document.querySelector('#newGame');
+reset.addEventListener('click', () => {
+    newGame();
 });
 
 score.appendChild(player);

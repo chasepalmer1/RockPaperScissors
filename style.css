@@ -1,4 +1,4 @@
-body {
+html {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: antiquewhite;
 }
@@ -12,9 +12,6 @@ body {
     justify-content: center;
     align-items: center;
     background-color: slategray;
-    border: outset;
-    border-color: black;
-    border-width: 5px;
 }
 
 #buttons {
@@ -22,7 +19,8 @@ body {
     padding: 50px;
     gap: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-basis: 20%;
     background-color: darkgrey;
 }
 
@@ -33,21 +31,21 @@ body {
     width: 180px;
     height: 90px;
     border-radius: 25px;
-    border-width: 5px;
+    border-width: 3px;
     border-color: black;
+    border-style: solid;
 }
 
 #messageBox {
     height: 400px;
+}
+
+.gameInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 400px;
     background-color: dimgray;
-    border: outset;
-    border-color: black;
-    border-width: 5px;
 }
 
 #scoreKeep {
@@ -55,6 +53,7 @@ body {
     height: 250px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     gap: 0px;
     font-size: 40px;
     font-weight: 600;
@@ -66,10 +65,17 @@ body {
     height: 100px;
     background-color: cadetblue;
     border: outset;
-    border-width: 5px;
+    border-width: 3px;
     border-color: black;
+    border-style: solid;
     border-radius: 25px;
     font-size: 25px;
     justify-content: center;
     align-items: center;
+}
+
+#newGame {
+    height: 200px;
+    align-items: center;
+    justify-content: center;
 }
